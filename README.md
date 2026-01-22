@@ -5,8 +5,10 @@
 MAGNUS++ (Matrix Algebra for Gigantic NUmerical Systems Plus-Plus) is
 a high-performance Rust implementation of the sparse matrix
 multiplication algorithm described in [Pou, Laukemann, & Patrini
-(2025)](https://arxiv.org/pdf/2501.07056) with additions (mostly GPU
-stuff) as described [here](./docs/additions_to_magnus.md).
+(2025)](https://arxiv.org/pdf/2501.07056) with significant hardware-specific
+optimizations and GPU acceleration.
+
+**📖 New to MAGNUS++?** Start with [INTRODUCTION.md](INTRODUCTION.md) for a comprehensive overview of all features and enhancements.
 
 ## Features
 
@@ -283,10 +285,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Documentation
 
+**Start Here:**
+- [**INTRODUCTION.md**](INTRODUCTION.md) - Comprehensive introduction to all MAGNUS++ features and enhancements
+
+**Core Documentation:**
 - [Algorithm Details](docs/master-document.md)
 - [Testing Strategy](docs/testing-strategy.md)
 - [ARM Optimization](docs/arm-hardware.md)
-- [Performance Report](PERFORMANCE_REPORT.md)
+- [Hardware Additions](docs/additions_to_magnus.md)
+
+**Performance:**
+- [Optimization Summary](OPTIMIZATION_SUMMARY.md)
+- [Parameter Space Exploration](PARAMETER_SPACE_EXPLORATION.md)
+- [Benchmarking Guide](docs/benchmarking-guide.md)
 
 ## License
 
