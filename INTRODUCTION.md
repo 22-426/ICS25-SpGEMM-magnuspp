@@ -227,7 +227,7 @@ This document provides an overview. For detailed information, consult:
 ### Development
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines and code standards
 - [docs/roadmap.md](docs/roadmap.md) - Project roadmap and future plans
-- [docs/testing-strategy.md](docs/testing-strategy.md) - Testing approach
+- [docs/test-tier-summary.md](docs/test-tier-summary.md) - Testing infrastructure overview
 
 ## What's Next?
 

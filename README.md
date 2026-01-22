@@ -290,7 +290,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 **Core Documentation:**
 - [Algorithm Details](docs/master-document.md)
-- [Testing Strategy](docs/testing-strategy.md)
+- [Testing Infrastructure](docs/test-tier-summary.md)
 - [ARM Optimization](docs/arm-hardware.md)
 - [Hardware Additions](docs/additions_to_magnus.md)
 
