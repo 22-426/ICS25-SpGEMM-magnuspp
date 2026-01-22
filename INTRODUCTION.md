@@ -20,6 +20,8 @@ MAGNUS++ maintains three fundamental principles:
 
 MAGNUS++ implements a sophisticated three-tier acceleration strategy that automatically selects the optimal computation method based on array size and available hardware:
 
+> **Note**: The size thresholds mentioned below correspond to constants defined in `src/constants.rs` (e.g., `METAL_SIZE_THRESHOLD`, `METAL_GPU_THRESHOLD`).
+
 #### Small Arrays (≤32 elements)
 - **ARM NEON**: Specialized bitonic sorting networks using 128-bit SIMD vectors
 - **AVX-512**: Vectorized sorting for Intel platforms with 512-bit registers
@@ -77,7 +79,7 @@ MAGNUS++ implements sophisticated prefetching strategies that adapt to your hard
 - ARM64: `PRFM` instructions (PLDL1KEEP, PLDL1STRM, PSTL1KEEP)
 - x86-64: `_mm_prefetch` with T0, T1, and NTA hints
 
-**Auto-Configuration**: Adapts based on available system memory (4GB/8GB thresholds)
+**Auto-Configuration**: Adapts based on available system memory (4GB/8GB thresholds defined in `src/constants.rs` as `MODERATE_MEMORY_THRESHOLD` and `AGGRESSIVE_MEMORY_THRESHOLD`)
 
 **Documentation**: See [GPU_MEMORY_STRATEGY.md](GPU_MEMORY_STRATEGY.md)
 
